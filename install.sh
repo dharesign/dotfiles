@@ -13,7 +13,7 @@ ask () {
     fi
 
     while true; do
-        read -p "$1 [$defaultString] " answer </dev/tty
+        read -p "$1 [$defaultString] " answer
 
         if [ -z $answer ]; then
             answer=$defaultValue
