@@ -1,0 +1,7 @@
+[user]
+	name = Daryl Haresign
+	email = dharesign@bloomberg.net
+[push]
+	default = simple
+[alias]
+	gl = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Cblue<%an>%Creset' --abbrev-commit --date=relative
