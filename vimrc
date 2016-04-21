@@ -8,6 +8,8 @@ call vundle#begin()
 call vundle#end()
 
 set rtp+=~/.vim/bundle/ctrlp.vim
+set wildignore+=cmake.bld
+let g:ctrlp_open_new_file = 't'
 
 filetype plugin indent on
 
