@@ -7,6 +7,8 @@ call vundle#begin()
     Plugin 'Lokaltog/vim-easymotion'
 call vundle#end()
 
+set rtp+=~/.vim/bundle/ctrlp.vim
+
 filetype plugin indent on
 
 fixdel
