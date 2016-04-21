@@ -23,6 +23,7 @@ set hlsearch
 set incsearch
 set laststatus=2
 set list
+set mouse=a
 set noerrorbells
 set number
 set relativenumber
