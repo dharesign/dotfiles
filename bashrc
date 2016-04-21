@@ -1,18 +1,20 @@
 [ -r ~/.git-completion.bash ] && source ~/.git-completion.bash
 [ -r ~/.git-prompt.sh ] && source ~/.git-prompt.sh
 
-GREEN='\e[0;32m'
-YELLOW='\e[0;33m'
-PINK='\e[0;35m'
-COLOR_RESET='\e[m'
+C_GREEN=$'\e[38;5;10m'
+C_YELLOW=$'\e[38;5;11m'
+C_PINK=$'\e[38;5;162m'
+C_RESET=$'\e[0m'
 
 if hash __git_ps1 2>/dev/null; then
-    PS1="\n$GREEN\u@\h $YELLOW\w $PINK\$(__git_ps1 '%s')\n$COLOR_RESET\$ "
+    PS1="\n$C_GREEN\u@\h $C_YELLOW\w $C_PINK\$(__git_ps1 '%s')$C_RESET\n\$ "
 else
-    PS1="\n$GREEN\u@\h $YELLOW\w\n$COLOR_RESET\$ "
+    PS1="\n$C_GREEN\u@\h $C_YELLOW\w$C_RESET\n\$ "
 fi
 export PS1
 
 export HISTCONTROL=ignoredups
+export LSCOLORS=gxfxcxdxbxegedabagacad
 
 [ -r ~/.bash_aliases ] && source ~/.bash_aliases
+[ -r ~/.local_aliases ] && source ~/.local_aliases
