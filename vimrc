@@ -14,6 +14,10 @@ call vundle#end()
 set rtp+=~/.vim/bundle/ctrlp.vim
 set wildignore+=cmake.bld
 let g:ctrlp_open_new_file = 't'
+let g:ctrlp_prompt_mappings = {
+  \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
+  \ 'AcceptSelection("t")': ['<cr>']
+  \ }
 
 filetype plugin indent on
 
