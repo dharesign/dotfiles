@@ -4,7 +4,7 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-    Plugin 'Lokaltog/vim-easymotion'
+    Plugin 'easymotion/vim-easymotion'
     Plugin 'jelera/vim-javascript-syntax'
     Plugin 'pangloss/vim-javascript'
     Plugin 'jacoborus/tender.vim'
