@@ -8,6 +8,7 @@ call vundle#begin()
     Plugin 'jelera/vim-javascript-syntax'
     Plugin 'pangloss/vim-javascript'
     Plugin 'jacoborus/tender.vim'
+    Plugin 'luochen1990/rainbow'
 call vundle#end()
 
 set rtp+=~/.vim/bundle/ctrlp.vim
@@ -76,3 +77,8 @@ map <Leader> <Plug>(easymotion-prefix)
 
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
+
+let g:rainbow_active=1
+let g:rainbow_conf={
+\ 'guifgs': ['#a8e6cf','#dcedc1','#ffd3b6','#ffaaa5','#ff8b94']
+\ }
