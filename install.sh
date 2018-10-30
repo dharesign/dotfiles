@@ -42,6 +42,16 @@ if ask "Install bash?"; then
     echo "  Done installing bash"
 fi
 
+if ask "Install fish?"; then
+    echo "  Installing fish:"
+    echo "  Removing ~/.config/fish/fish.config"
+    rm -rf ~/.config/fish/fish.config
+    echo "  Symlinking ~/.config/fish/fish.config"
+    mkdir -p ~/.config/fish/
+    ln -s ~/.dharesign-dotfiles/fish.config ~/.config/fish/fish.config
+    echo "  Done installing fish"
+fi
+
 if ask "Install git?"; then
     echo "  Installing git:"
     echo "    Removing ~/.gitconfig"
