@@ -44,11 +44,11 @@ fi
 
 if ask "Install fish?"; then
     echo "  Installing fish:"
-    echo "    Removing ~/.config/fish/fish.config"
-    rm -rf ~/.config/fish/fish.config
-    echo "    Symlinking ~/.config/fish/fish.config"
+    echo "    Removing ~/.config/fish/config.fish"
+    rm -rf ~/.config/fish/config.fish
+    echo "    Symlinking ~/.config/fish/config.fish"
     mkdir -p ~/.config/fish/
-    ln -s ~/.dharesign-dotfiles/fish.config ~/.config/fish/fish.config
+    ln -s ~/.dharesign-dotfiles/config.fish ~/.config/fish/config.fish
     echo "  Done installing fish"
 fi
 
