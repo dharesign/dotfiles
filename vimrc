@@ -9,6 +9,7 @@ call vundle#begin()
     Plugin 'pangloss/vim-javascript'
     Plugin 'jacoborus/tender.vim'
     Plugin 'luochen1990/rainbow'
+    Plugin 'itchyny/lightline.vim'
 call vundle#end()
 
 set rtp+=~/.vim/bundle/ctrlp.vim
@@ -35,6 +36,7 @@ set laststatus=2
 set list
 set mouse=a
 set noerrorbells
+set noshowmode
 set nowrap
 set number
 set relativenumber
@@ -42,11 +44,6 @@ set ruler
 set shiftwidth=4
 set showcmd
 set softtabstop=4
-set statusline=%#StatusLineNC#\ %M%R\ %#StatusLine#\ %t\ %#StatusLineNC#%<
-set statusline+=\ %Y\ %#StatusLine#\ %{''.(&fenc!=''?&fenc:&enc).''}
-set statusline+=\ %#StatusLineNC#\ %{&ff}\ %#StatusLine#\ %b\ 0x%B
-set statusline+=\ %#StatusLineNC#%=%#StatusLine#\ row:\ %l/%L\ (%p%%)
-set statusline+=\ %#StatusLineNC#\ col:\ %c\  "spaces
 set t_vb=
 set tabpagemax=100
 set tabstop=4
@@ -86,3 +83,5 @@ let g:rainbow_active=1
 let g:rainbow_conf={
 \ 'guifgs': ['#a8e6cf','#dcedc1','#ffd3b6','#ffaaa5','#ff8b94']
 \ }
+
+let g:lightline = { 'colorscheme': 'tender' }
