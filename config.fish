@@ -29,3 +29,5 @@ set -g fish_greeting
 set -x LSCOLORS gxfxcxdxbxegedabagacad
 
 alias vim="vim -p"
+
+set PATH $HOME/.cargo/bin $PATH

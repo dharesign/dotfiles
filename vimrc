@@ -10,6 +10,7 @@ call vundle#begin()
     Plugin 'jacoborus/tender.vim'
     Plugin 'luochen1990/rainbow'
     Plugin 'itchyny/lightline.vim'
+    Plugin 'rust-lang/rust.vim'
 call vundle#end()
 
 set rtp+=~/.vim/bundle/ctrlp.vim
@@ -85,3 +86,6 @@ let g:rainbow_conf={
 \ }
 
 let g:lightline = { 'colorscheme': 'tender' }
+
+let g:rustfmt_autosave = 1
+let g:rust_recommended_style = 0
