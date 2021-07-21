@@ -11,6 +11,7 @@ call vundle#begin()
     Plugin 'luochen1990/rainbow'
     Plugin 'itchyny/lightline.vim'
     Plugin 'rust-lang/rust.vim'
+    Plugin 'leafgarland/typescript-vim'
 call vundle#end()
 
 set rtp+=~/.vim/bundle/ctrlp.vim
