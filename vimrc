@@ -16,10 +16,17 @@ call vundle#end()
 
 set rtp+=~/.vim/bundle/ctrlp.vim
 set wildignore+=cmake.bld
+let g:ctrlp_max_files = 0
 let g:ctrlp_open_new_file = 't'
 let g:ctrlp_prompt_mappings = {
   \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
   \ 'AcceptSelection("t")': ['<cr>']
+  \ }
+let g:ctrlp_user_command = {
+  \ 'types': {
+    \ 1: ['.git', 'cd %s && git ls-files']
+    \ },
+  \ 'fallback': 'find %s -type f'
   \ }
 
 filetype plugin indent on
@@ -90,3 +97,4 @@ let g:lightline = { 'colorscheme': 'tender' }
 
 let g:rustfmt_autosave = 1
 let g:rust_recommended_style = 0
+let g:netrw_banner = 0
