@@ -1,7 +1,17 @@
 [user]
 	name = Daryl Haresign
 	email = dharesign@bloomberg.net
+[pull]
+	ff = only
 [push]
 	default = simple
 [alias]
 	gl = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Cblue<%an>%Creset' --abbrev-commit --date=relative
+[blame]
+	#ignoreRevsFile = .git-blame-ignore-revs
+	markIgnoredLines = true
+	markUnmarkableLines = true
+	coloring = highlightRecent
+	date = relative
+[color "blame"]
+	highlightRecent = 58, 12 month ago, 230, 9 month ago, 229, 6 month ago, 228, 4 month ago, 227, 3 month ago, 226, 2 month ago, 220, 4 week ago, 214, 3 week ago, 208, 2 week ago, 202, 1 week ago, 196

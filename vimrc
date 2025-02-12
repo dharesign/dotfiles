@@ -39,6 +39,8 @@ set backspace=indent,eol,start
 set cindent
 set colorcolumn=80
 set expandtab
+set foldlevelstart=99
+set foldmethod=syntax
 set hlsearch
 set incsearch
 set laststatus=2
@@ -98,3 +100,13 @@ let g:lightline = { 'colorscheme': 'tender' }
 let g:rustfmt_autosave = 1
 let g:rust_recommended_style = 0
 let g:netrw_banner = 0
+
+"function FormatBufferCpp()
+"    if &modified && !empty(findfile('.clang-format', expand('%:p:h') . ';'))
+"        let cursor = getpos('.')
+"        :%!bde-format
+"        call setpos('.', cursor)
+"    endif
+"endfunction
+"
+"autocmd BufWritePre *.h,*.cpp :call FormatBufferCpp()
